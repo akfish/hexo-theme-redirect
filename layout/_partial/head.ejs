@@ -20,4 +20,6 @@
   }
   %>
   <title>Redirecting to <% if (title){ %><%= title %> | <% } %><%= config.title %>...</title>
+  <meta http-equiv="refresh" content="0; url=http://<%= config.new_domain %>/<%= page.path %>">
+  <link rel="canonical" href="http://<%= config.new_domain %>/<%= page.path %>" />
 </head>
